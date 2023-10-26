@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+nav ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.intro {
+    background-image: url("Background.jpeg");
+    background-size: cover; 
+    background-position: center; 
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    padding: 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 10px;
+}
+
+.intro h1:first-of-type {
+    color: black;
+}
+
+.intro h1:last-of-type(2) {
+    color: white;
+}
+
+.intro h1:nth-child(3) {
+    color: black;
+}
+
+.intro button {
+    background-attachment: white;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    align-self: flex-start;
+}
+
+.about-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+#about h2, #work h2, #contact h2 {
+    color: grey;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-row input {
+    flex: 3;
+    padding: 5px;
+    width: 100%;
+}
+
+button {
+    align-self: flex-end;
+}
+
+.social a {
+    margin-right: 25px;
+}
+
+.success-popup {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
